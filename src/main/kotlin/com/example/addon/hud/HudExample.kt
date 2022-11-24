@@ -5,9 +5,10 @@ import meteordevelopment.meteorclient.systems.hud.HudElement
 import meteordevelopment.meteorclient.systems.hud.HudElementInfo
 import meteordevelopment.meteorclient.systems.hud.HudRenderer
 import meteordevelopment.meteorclient.utils.render.color.Color
+import xyz.chaoten.ximeteor.XiAddon
 
 
-object HudExample : HudElement(HudElementInfo(Addon.HUD_GROUP, "example", "HUD element example.") { HudExample }) {
+object HudExample : HudElement(HudElementInfo(XiAddon.HUD_GROUP, "example", "HUD element example.") { HudExample }) {
 
     override fun render(renderer: HudRenderer) {
         setSize(renderer.textWidth("Example element", true), renderer.textHeight(true))

@@ -1,0 +1,7 @@
+{
+  "name": "XI-Plugin-Example",
+  "main": "com.example.addon.Addon",
+  "authors": [
+    "Chaoten"
+  ]
+}

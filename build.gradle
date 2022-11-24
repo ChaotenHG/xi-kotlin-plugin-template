@@ -18,7 +18,12 @@ repositories {
         name = "meteor-maven-snapshots"
         url = "https://maven.meteordev.org/snapshots"
     }
+    maven {
+        name = "jitpack"
+        url = "https://jitpack.io"
+    }
     mavenCentral()
+
 }
 
 dependencies {
@@ -30,6 +35,9 @@ dependencies {
     // Meteor
     modImplementation "meteordevelopment:meteor-client:${project.meteor_version}"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+
+    // Xi
+    implementation "com.github.ChaotenHG:XI-meteor-addon:${project.xi_version}"
 }
 
 processResources {
